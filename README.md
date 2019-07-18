@@ -41,10 +41,14 @@ The above cookie then will be sent in subsequent request to verify the user and 
 
 ## Logout User By EmailId + ssoToken (POST)
 URL : localhost:9090/service/logout
-Request Body: {
+Request Body:  
+              ```json 
+              {
               	"email": "test2@gmail.com",
               	"ssoToken" : "33b016d8-57d8-4cd8-9a12-19281862c3c1"
-              }
+              } 
+              ```
+
 
 Response Body: {
                    "meta": {
