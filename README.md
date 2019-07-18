@@ -7,7 +7,7 @@ Request Body:
 ```json
 {
       "email": "test2@gmail.com"
-      "password":"test123",
+      "password": "test123",
       "organizationId":"plastic"
  } 
 ``` 
