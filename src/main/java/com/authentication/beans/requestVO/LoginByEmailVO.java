@@ -1,4 +1,4 @@
-package com.authentication.requestVO;
+package com.authentication.beans.requestVO;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
@@ -15,5 +15,6 @@ public class LoginByEmailVO {
 
     private String email;
     private String password;
+    private String organizationId;
 
 }

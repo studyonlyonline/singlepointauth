@@ -5,6 +5,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface UserLoginInfoRepository extends JpaRepository<UserLoginInfoEntity, Long> {
+public interface UserLoginInfoRepository extends JpaRepository<UserLoginInfoEntity, Long> , UserLoginInfoRepositoryCustom{
+
 
 }

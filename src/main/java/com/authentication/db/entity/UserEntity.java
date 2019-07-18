@@ -1,5 +1,6 @@
 package com.authentication.db.entity;
 
+import com.authentication.beans.constants.UserTypeEnum;
 import lombok.*;
 
 import javax.persistence.*;
@@ -18,7 +19,7 @@ public class UserEntity {
     @Column(name = "user_id")
     private Long userId;
     @Column(name = "organization_id")
-    private String origanizationId;
+    private String organizationId;
     @Column(name = "email")
     private String email;
     @Column(name = "password")
@@ -31,8 +32,9 @@ public class UserEntity {
     private Boolean isEmailVerified;
     @Column(name = "is_mobile_verified")
     private Boolean isMobileVerified;
-    @Column(name = "type")
-    private String type;
+    @Column(name = "user_type")
+    @Enumerated(EnumType.STRING)
+    private UserTypeEnum userType;
     @Column(name = "created_on")
     private LocalDateTime createdOn;
     @Column(name = "modified_on")

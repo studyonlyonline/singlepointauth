@@ -1,4 +1,4 @@
-package com.authentication.requestVO;
+package com.authentication.beans.requestVO;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Getter;

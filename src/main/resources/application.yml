@@ -9,3 +9,6 @@ spring:
     hibernate.ddl-auto: "none"
     hibernate.dialect: "org.hibernate.dialect.MySQL5Dialect"
     show-sql: "true"
+
+server:
+  port: 9090

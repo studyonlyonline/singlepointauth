@@ -8,7 +8,7 @@ import java.util.List;
 
 @Repository
 public interface IUserRepository extends JpaRepository<UserEntity, Long>, IUserRepositoryCustom {
-    List<UserEntity> findByEmail(String email);
+    List<UserEntity> findByEmailAndOrganizationId(String email, String organizationId);
 
 //    @Query("SELECT u from UserEntity u where u.email = :emailId")
 //    UserEntity findOnlyOneUserByEmail(@Param("emailId") String email);

@@ -4,7 +4,9 @@ import com.authentication.db.entity.UserEntity;
 
 public interface IUserRepositoryCustom {
 
-    UserEntity findFirstUserByEmail(String email);
+    UserEntity findFirstUserByEmail(String email, String organizationId);
 
-    UserEntity verifyPassword(String email, String password);
+    UserEntity verifyPassword(String email, String password, String organizationId);
+
+    UserEntity getUserEntityFromEmailOrSso(String email, String ssoToken, String organizationId);
 }

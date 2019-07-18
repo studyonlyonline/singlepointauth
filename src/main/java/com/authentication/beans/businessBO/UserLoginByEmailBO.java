@@ -1,4 +1,4 @@
-package com.authentication.businessBO;
+package com.authentication.beans.businessBO;
 
 import lombok.*;
 
@@ -11,10 +11,11 @@ public class UserLoginByEmailBO {
 
     private String emailId;
     private String password;
+    private String organizationId;
 
     @Override
-    public String toString(){
-        return "Emailid: " + getEmailId();
+    public String toString() {
+        return "Emailid: " + getEmailId() + " Organization: "+getOrganizationId();
     }
 
 }
