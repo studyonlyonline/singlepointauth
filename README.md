@@ -60,14 +60,15 @@ Response Body: {
 ### With Email and OrganizationID (no login)
 
 URL: localhost:9090/service/create-profile
-Request Body : {
+Request Body : 
+              ```{
                	"emailId" : "test2@gmail.com",             // mandatory
                	"organizationId" : "plastic",              // mandatory
                	"firstname" : "test",                      // mandatory
                	"lastName" : "gupta",                      // optional
                	"address"  : "87/12 k kanpur",             // optional
                	"pincode"  : "208003"                       // optional
-               }
+               }```
 
 Response : {
                "meta": {
