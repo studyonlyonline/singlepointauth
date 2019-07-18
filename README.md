@@ -6,7 +6,7 @@ URL : localhost:9090/service/registerUser <br>
 Request Body:  
 ```json
 {
-      "email": "test2@gmail.com"
+      "email": "test2@gmail.com",
       "password": "test123",
       "organizationId":"plastic"
  } 
