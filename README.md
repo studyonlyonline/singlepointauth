@@ -3,12 +3,14 @@ Single sign on service to be used for any application
 
 ## Register User (POST):
 URL : localhost:9090/service/registerUser <br>
-Request Body:<br>
-              {<br>
-                    "email": "test2@gmail.com",<br> 
-                    "password":"test123",<br>
-                    "organizationId":"plastic" <br>
-               }<br>
+Request Body:  
+```json
+{
+      "email": "test2@gmail.com"
+      "password":"test123",
+      "organizationId":"plastic"
+ } 
+```
                
 
 
