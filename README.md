@@ -58,8 +58,8 @@ URL : localhost:9090/service/logout
 Request Body:  
 ```json 
 {
-      "email": "test2@gmail.com",
-      "ssoToken" : "33b016d8-57d8-4cd8-9a12-19281862c3c1"
+      "email": "test2@gmail.com",                                       //mandatory
+      "ssoToken" : "33b016d8-57d8-4cd8-9a12-19281862c3c1"               //mandatory
 } 
 ```
 
@@ -111,11 +111,11 @@ URL: localhost:9090/service/create-profile
 RequestBody : 
 ```json 
 {
-      "ssoToken" : "33b016d8-57d8-4cd8-9a12-19281862c3c1",
-      "firstname" : "test",
-      "lastname" : "jain",
-      "address"  : "987/H -G plot 6 Delhi",
-      "pincode"  : "122011"
+      "ssoToken" : "33b016d8-57d8-4cd8-9a12-19281862c3c1",          //mandatory
+      "firstname" : "test",                                         //mandatory
+      "lastname" : "jain",                                          //optional
+      "address"  : "987/H -G plot 6 Delhi",                         //optional
+      "pincode"  : "122011"                                         //optional
 }
 ```
 
@@ -140,12 +140,12 @@ URL: localhost:9090/service/create-corporate-profile
 RequestBody : 
 ```json
 {
-      "email" : "test2@gmail.com",
-      "organizationId" : "plastic",
-      "firmName" : "testing solutions pvt ltd",
-      "gstin" : "AGP21334ASDF564",
+      "email" : "test2@gmail.com",                                      //mandatory
+      "organizationId" : "plastic",                                     //mandatory
+      "firmName" : "testing solutions pvt ltd",                         //mandatory
+      "gstin" : "AGP21334ASDF564",                                      //either gstin or aadhar is compulsory
       "aadharNo" : "123412341234",
-      "billingAddress"  : "london"
+      "billingAddress"  : "london"                                      //optional
 }
 ```
 
@@ -166,11 +166,11 @@ URL: localhost:9090/service/create-corporate-profile
 RequestBody : 
 ```json
 {
-      "ssoToken" : "33b016d8-57d8-4cd8-9a12-19281862c3c1",
-      "firmName" : "testing solutions pvt ltd",
-      "gstin" : "AGP21334ASDF564",
+      "ssoToken" : "33b016d8-57d8-4cd8-9a12-19281862c3c1",                      //mandatory
+      "firmName" : "testing solutions pvt ltd",                                 //mandatory
+      "gstin" : "AGP21334ASDF564",                                              //either gstin or aadhar is compulsory
       "aadharNo" : "123412341234",
-      "billingAddress"  : "london"
+      "billingAddress"  : "london"                                              //optional
 }
 ```
 
@@ -195,8 +195,8 @@ URL: localhost:9090/service/user-profile
 RequestBody : 
 ```json
 {
-      "email" : "test2@gmail.com",
-      "organizationId" : "plastic"
+      "email" : "test2@gmail.com",                                      //mandatory
+      "organizationId" : "plastic"                                      //mandatory
 }
 ```
 
@@ -237,7 +237,7 @@ URL: localhost:9090/service/user-profile
 RequestBody : 	
 ```json
 {
-      "ssoToken" : "33b016d8-57d8-4cd8-9a12-19281862c3c1"
+      "ssoToken" : "33b016d8-57d8-4cd8-9a12-19281862c3c1"                          //mandatory
 }
 ```
 
