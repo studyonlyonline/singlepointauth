@@ -1,7 +1,7 @@
 # singlepointauth
 Single sign on service to be used for any application
 
-##Register User (POST):
+## Register User (POST):
 URL : localhost:9090/service/registerUser
 Reuqest Body:  {
                     "email": "test2@gmail.com",
@@ -51,7 +51,7 @@ Response Body: {
                    }
                }
 
-##Create Profile (POST)
+## Create Profile (POST)
 
 ### With Email and OrganizationID (no login)
 
@@ -94,7 +94,7 @@ Response : {
            }
 
 
-##Create Corporate Profile (POST)
+## Create Corporate Profile (POST)
 
 ### With Email and OrganizationID (no login)
 
