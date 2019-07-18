@@ -2,37 +2,41 @@
 Single sign on service to be used for any application
 
 ## Register User (POST):
-URL : localhost:9090/service/registerUser
-Reuqest Body:  {
-                    "email": "test2@gmail.com",
-                    "password":"test123",
-                    "organizationId":"plastic"
-               }
+URL : localhost:9090/service/registerUser <br>
+Request Body:<br>
+              {<br>
+                    "email": "test2@gmail.com",<br> 
+                    "password":"test123",<br>
+                    "organizationId":"plastic" <br>
+               }<br>
+               
 
 
 ## Login User By EmailId(POST)
-URL : localhost:9090/service/login
-Request Body: {
-              	"email": "test@gmail.com",       //mandatory
-              	"password": "test123",           //mandatory
-              	"organizationId" : "plastic"     //mandatory
+URL : localhost:9090/service/login <br>
+Request Body:<br> 
+              { <br>
+              	"email": "test@gmail.com",       //mandatory <br>
+              	"password": "test123",           //mandatory <br>
+              	"organizationId" : "plastic"     //mandatory <br>
               }
 
-Response Body: {
-                   "meta": {
-                       "statusCode": "200",
-                       "statusMessage": "Successfully logged in.",
-                       "developerMessage": null,
-                       "timestamp": "2019-07-19T00:24:42.726"
-                   },
-                   "data": {
-                       "emailId": "test2@gmail.com",
-                       "ssoToken": "33b016d8-57d8-4cd8-9a12-19281862c3c1"
-                   }
-               }
+Response Body:<br> 
+              { <br>
+                   "meta": { <br>
+                       "statusCode": "200", <br>
+                       "statusMessage": "Successfully logged in.", <br>
+                       "developerMessage": null, <br>
+                       "timestamp": "2019-07-19T00:24:42.726" <br>
+                   }, <br>
+                   "data": { <br>
+                       "emailId": "test2@gmail.com", <br>
+                       "ssoToken": "33b016d8-57d8-4cd8-9a12-19281862c3c1" <br>
+                   } <br>
+               } <br>
 
-Set the above ssoToken in cookie with key as "ssoToken" and value as ssoToken value in response.
-The above cookie then will be sent in subsequent request to verify the user and get its details.
+Set the above ssoToken in cookie with key as "ssoToken" and value as ssoToken value in response. <br>
+The above cookie then will be sent in subsequent request to verify the user and get its details. <br>
 
 
 ## Logout User By EmailId + ssoToken (POST)
